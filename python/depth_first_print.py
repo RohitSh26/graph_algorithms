@@ -1,8 +1,3 @@
-
-from lib2to3.pgen2.token import RPAR
-from locale import currency
-
-
 graph = {
     'a': ['b', 'c'],
     'b': ['d'],
