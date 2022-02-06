@@ -25,5 +25,26 @@ const hasPath = (graph, source, destination) => {
 
 }
 
+const hasPathBreathFirst = (graph, src, dst) => {
+
+    const queue = [src]
+
+    while (queue.length > 0) {
+
+        const current = queue.shift()
+        
+        if(current === dst) return true
+
+        for(const n of graph[current]){
+            queue.push(n)
+        }
+    }
+
+    return false
+}
+
 const result = hasPath(testGraph, 'f', 'j'); // true
 console.log(result);
+
+const resultBF = hasPathBreathFirst(testGraph, 'f', 'j'); // true
+console.log(resultBF);

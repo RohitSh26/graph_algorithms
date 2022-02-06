@@ -24,7 +24,7 @@ const depthFirstRecursivePrint = (graph, root) => {
      console.log(root);
 
     for(let neighbor of graph[root]){
-        depthFirstprint(graph, neighbor);
+        depthFirstRecursivePrint(graph, neighbor);
     }   
 }
 
