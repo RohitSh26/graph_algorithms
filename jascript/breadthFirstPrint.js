@@ -20,7 +20,7 @@ const breadthFirstPrint = (aGraph, root) => {
 }
 
 // Input Graph
-const aGraph = {
+const graph = {
     a: ['b', 'c'],
     b: ['d'],
     c: ['e'],
@@ -30,4 +30,4 @@ const aGraph = {
 }
 
 // Call breath first print
-breadthFirstPrint(aGraph, 'a');
+breadthFirstPrint(graph, 'a');
